@@ -1,0 +1,7 @@
+<div id="map" style="height: 500px;"></div>
+
+<div class="controls">
+    <p>Radio: {{ objetoIpt.radio }} metros</p>
+    <!-- Control deslizante para modificar el radio del círculo -->
+    <p-slider [(ngModel)]="objetoIpt.radio" [min]="1" [max]="500" [step]="10" (onChange)="handleRadioChange($event)"></p-slider>
+  </div>
